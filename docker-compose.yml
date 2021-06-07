@@ -2,6 +2,11 @@ version: '2'
 
 volumes:
   nextcloud:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/media/hdd/volumes/nextcloud'
   db:
 
 services:
